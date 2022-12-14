@@ -1,0 +1,47 @@
+Server Distribution: CentOS w/ code-server
+Github code server: https://github.com/coder/code-server
+
+# set code-server password
+vi ~/.config/code-server/config.yaml
+
+#restart code-server service
+sudo systemctl restart code-server@cloud_user.service
+
+# go to your web browser then access the <public-ip>:8080
+# use the password that you set for code-server
+
+# install dev dependencies
+sudo yum install openssl-devel -y
+
+# install pyenv
+curl https://pyenv.run | bash
+
+# Load pyenv automatically by appending
+# the following to 
+~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
+and ~/.bashrc (for interactive shells) :
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# save and quit
+# source both bashrc and bash_profile
+
+# install python
+pyenv install 3.7.6
+
+# check pyenv versions
+pyenv versions
+
+# check python versions
+python --version
+
+# set pyenv python version
+pyenv shell 3.7.6
+
+# check python version again
+python --version
+
+# upgrade pip
+pip3.7 install --upgrade pip
