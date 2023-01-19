@@ -29,6 +29,23 @@ def isValidForExer5(arr):
     #print(list(y in range(1000) and y-x==10 for x,y in a))
     return  (all(list(y in range(1000) and y-x==10 for x,y in a)) and len(arr)==100)
 
+# EXER 6
+# Write a Python program to check a given list of integers where the sum of the first i integers is i.
+def isValidForExer6(arr):
+
+    print([sum(arr[:i]) == i for i in range(len(arr))])
+    return len(arr) == sum(arr)
+
+# EXER 7
+# Write a Python program to split a string of words separated by commas and spaces into two lists, words and separators. 
+# help: https://pynative.com/python-regex-split/
+def splitExer7(str):
+    import re
+    merged = re.split(r"([ ,]+)", str)
+    return [merged[::2], merged[1::2]]
+
+
+#-------------------------#
 
 #FOR EXER 1
 #array_input = [19, 20, 15, 5, 3, 6, 7, 2]
@@ -49,7 +66,15 @@ def isValidForExer5(arr):
 #res = isValidForExer4(array_input)
 
 #FOR EXER 5
-array_input = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540, 550, 560, 570, 580, 590, 600, 610, 620, 630, 640, 650, 660, 670, 680, 690, 700, 710, 720, 730, 740, 750, 760, 770, 780, 790, 800, 810, 820, 830, 840, 850, 860, 870, 880, 890, 900, 910, 920, 930, 940, 950, 960, 970, 980, 990]
-res = isValidForExer5(array_input)
+#array_input = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540, 550, 560, 570, 580, 590, 600, 610, 620, 630, 640, 650, 660, 670, 680, 690, 700, 710, 720, 730, 740, 750, 760, 770, 780, 790, 800, 810, 820, 830, 840, 850, 860, 870, 880, 890, 900, 910, 920, 930, 940, 950, 960, 970, 980, 990]
+#res = isValidForExer5(array_input)
+
+#FOR EXER 6
+#array_input = [1,2,3,1,1]
+#res = isValidForExer6(array_input)
+
+#FOR EXER 7
+str_input = "W3resource Python, Exercises."
+res = splitExer7(str_input)
 
 print(res)
