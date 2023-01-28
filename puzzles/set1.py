@@ -44,8 +44,42 @@ def splitExer7(str):
     merged = re.split(r"([ ,]+)", str)
     return [merged[::2], merged[1::2]]
 
+# EXER 9
+# Write a Python program to find a list of integers containing exactly four distinct values, such that no integer repeats twice consecutively among the first sixteen entries
+def isValidForExer9(arr):
+    return all(arr[i] != arr[i+1] for i in range(len(arr)-1)) and len(set(arr)) == 4
+
+# EXER 10
+# Given a string consisting of whitespace and groups of matched parentheses, write a Python program to split it into groups of perfectly matched parentheses without any whitespace. 
+def cleanUpSpaces(str):
+    grouped_pair = []
+    group = ""
+    for prnthss in str.replace(" ", ""):
+        group += prnthss
+        if group.count("(") == group.count(")"):
+            grouped_pair.append(group)
+            group = ""
+    return grouped_pair
+
+# EXER 11
+# Write a Python program to find the indexes of numbers in a given list below a given threshold. 
+def findIndexes(thresh, arr):
+    #return [i for i in range(len(arr)) if arr[i] < thresh]
+    return [i for i,n in enumerate(arr) if arr[i] < thresh]
 
 #-------------------------#
+t = 10
+input_arr = [0, 12, 4, 3, 49, 9, 1, 5, 3]
+res = findIndexes(t, input_arr)
+
+#FOR EXER 10
+#str_input = "( ()) ((()()())) (()) ()"
+#res = cleanUpSpaces(str_input)
+
+
+#FOR EXER 9
+#array_input = [1, 2, 3, 4, 4, 2, 3, 1, 1, 2, 3, 4, 1, 2, 3, 4]
+#res = isValidForExer9(array_input)
 
 #FOR EXER 1
 #array_input = [19, 20, 15, 5, 3, 6, 7, 2]
@@ -74,7 +108,7 @@ def splitExer7(str):
 #res = isValidForExer6(array_input)
 
 #FOR EXER 7
-str_input = "W3resource Python, Exercises."
-res = splitExer7(str_input)
+#str_input = "The colors in my studyroom are blue, green, and yellow."
+#res = splitExer7(str_input)
 
 print(res)
