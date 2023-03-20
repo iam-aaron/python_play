@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Customer Sales",
+    "description": "Customer Sales Realtime Data Publishing",
+    "type": "object", 
+    "properties": { 
+        "customerID": {
+            "description": "Unique identifier for the customer", 
+            "type": "string"
+        },
+        "firstName": {
+            "description": "First name of the customer", 
+            "type": "string"
+        },
+        "lastName": {
+            "description": "Surname name of the customer", 
+            "type": "string"
+        },
+        "emailAddress": {
+            "description": "Valid email address of the customer", 
+            "type": "string"
+        },
+        "phoneNumber": {
+            "description": "Phone number of the customer", 
+            "type": "string"
+        },
+        "dateTime": {
+            "description": "Date time of the scan", 
+            "type": "string"
+        },
+        "eventCode": {
+            "description": "Unique identifier for the product of the scan", 
+            "type": "string"
+        },
+        "priceCategory": {
+            "description": "Descriptive for the price category of the product for the scanned barcode", 
+            "type": "string"
+        },
+        "priceType": {
+            "description": "Descriptive for the price type of the product for the scanned barcode", 
+            "type": "string"
+        },
+        "organisationName": {
+            "description": "Name of the membership organisation which the product for the scanned barcode is part of", 
+            "type": "string"
+        },
+        "memberNumber": {
+            "description": "If the customer is attending under a membership organistation, this is the member number for the customer", 
+            "type": "string"
+        },
+        "section": {
+            "description": "The section of the product for the sale", 
+            "type": "string"
+        },
+        "row": {
+            "description": "The row of the product for the sale", 
+            "type": "string"
+        },
+        "seat": {
+            "description": "The seat of the product for the sale", 
+            "type": "string"
+        },
+        "barcode": {
+            "description": "A representation of the barcode for mapping to attendance data", 
+            "type": "string"
+        },
+        "gateNo": {
+            "description": "The number of the gate the patron scanned the barcode at", 
+            "type": "integer"
+        },
+        "gateDescription": {
+            "description": "The description of the gate the patron scanned the barcode at", 
+            "type": "string"
+        },
+        "status": {
+            "description": "The status flag from the access control system of the scan", 
+            "type": "string"
+        }
+    },
+    "required": ["dateTime", "barcode", "eventCode", "priceCategory", "priceType", "priceNet", "organisationName", "memberNumber", "section", "row", "seat", "status"], 
+    "additionalProperties": false
+}

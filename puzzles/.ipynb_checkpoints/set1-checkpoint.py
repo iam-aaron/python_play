@@ -75,7 +75,9 @@ res = findIndexes(t, input_arr)
 
 
 
-
+#FOR EXER 3
+#pileHeight = 10
+#res = makeStonePileExer3(pileHeight)
 
 
 #FOR EXER 4

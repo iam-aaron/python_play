@@ -1,0 +1,194 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Customer Sales",
+    "description": "Customer Sales Realtime Data Publishing",
+    "type": "object", 
+    "properties": { 
+        "salutation": {
+            "description": "", 
+            "type": "string"
+        },
+        "firstName": {
+            "description": "First name of the customer", 
+            "type": "string"
+        },
+        "lastName": {
+            "description": "Surname name of the customer", 
+            "type": "string"
+        },
+        "emailAddress": {
+            "description": "Valid email address of the customer", 
+            "type": "string"
+        },
+        "address": {
+            "description": "Street address of the customer", 
+            "type": "string"
+        },
+        "city": {
+            "description": "City address of the customer", 
+            "type": "string"
+        },
+        "state": {
+            "description": "State address of the customer", 
+            "type": "string"
+        },
+        "postcode": {
+            "description": "Post code address of the customer", 
+            "type": "string"
+        },
+        "country": {
+            "description": "Country address of the customer", 
+            "type": "string"
+        },
+        "phoneNumber": {
+            "description": "Phone number of the customer", 
+            "type": "string"
+        },
+        "entitlementPassword": {
+            "description": "The passwrod used if the sale is for an entitlement protected product", 
+            "type": "string"
+        },
+        "canContact": {
+            "description": "Indicate whether the customer has agreed to be contacted with marketing communication", 
+            "enum": [ "Y", "N" ] 
+        },
+        "customerID": {
+            "description": "Unique identifier for the customer", 
+            "type": "string"
+        },
+        "transactionDateTime": {
+            "description": "Date time of the sale", 
+            "type": "string"
+        },
+        "channelId": {
+            "description": "Unique identifier for the channel which the sale was placed through - 1 = Web; 2 = Mobile; 3 = Call Centre; 4 = Agency; 5 = Box Office; 6 = Memberships; 7 = Groups; 8 = Hospitality; 9 = Special 1; and 10 = Special 2 ", 
+            "enum": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+        },
+        "channelCode": {
+            "description": "Code for the channel which the sale was placed through - W = Web; M = Mobile; C = Call Centre; A = Agency; B = Box Office; L = Memberships; G = Groups; H = Hospitality; 1 = Special 1; and 2 = Special 2 ", 
+            "type": [ "W", "M", "C", "A", "B", "L", "G", "H", "1", "2" ] 
+        },
+        "productID": {
+            "description": "Unique identifier for the product of the sale", 
+            "type": "string"
+        },
+        "productWho": {
+            "description": "Text descritptive for the product", 
+            "type": "string"
+        },
+        "productWhere": {
+            "description": "If product is a performance and text descriptive of where it is at", 
+            "type": "string"
+        },
+        "productWhen": {
+            "description": "If product is a performance and text descriptive of when it is", 
+            "type": "string"
+        },
+        "productShow": {
+            "description": "Unique identifier for the show that the product is part of - also referred to a the Content ID", 
+            "type": "string"
+        },
+        "productMarketingType": {
+            "description": "Identifier for marketing genre's within the ticketing system", 
+            "type": "string"
+        },
+        "orderId": {
+            "description": "Unique identifier for the sale", 
+            "type": "string"
+        },
+        "priceCategoryCode": {
+            "description": "Code for the price category of the product for the sale", 
+            "type": "string"
+        },
+        "priceCategoryName": {
+            "description": "Descriptive for the price category of the product for the sale", 
+            "type": "string"
+        },
+        "priceTypeCode": {
+            "description": "Code for the price type of the product for the sale", 
+            "type": "string"
+        },
+        "priceTypeName": {
+            "description": "Descriptive for the price type of the product for the sale", 
+            "type": "string"
+        },
+        "price": {
+            "description": "Price in pennies for the sale, including and inside changes", 
+            "type": "string"
+        },
+        "priceNet": {
+            "description": "Price in pennies for the sale, minus any inside charges", 
+            "type": "string"
+        },
+        "faceValueFees": {
+            "description": "Total fees outside of the price, but inside the face value in pennies for the sale", 
+            "type": "string"
+        },
+        "quantity": {
+            "description": "1 for a purchase and -1 for a refund", 
+            "type": "int"
+        },
+        "section": {
+            "description": "The section of the product for the sale", 
+            "type": "string"
+        },
+        "row": {
+            "description": "The row of the product for the sale", 
+            "type": "string"
+        },
+        "seat": {
+            "description": "The seat of the product for the sale", 
+            "type": "string"
+        },
+        "bookingType": {
+            "description": "If the product in the sale has a specific booking classification", 
+            "type": "string"
+        },
+        "barcode": {
+            "description": "A representation of the barcode for mapping to attendance data", 
+            "type": "string"
+        },
+        "productType": {
+            "description": "Indicate whether the customer has agreed to be contacted with marketing communication", 
+            "enum": [ "Y", "N" ] 
+        },
+        "childOfOrderlineId": {
+            "description": "Will be populated if the orderline is part of a package", 
+            "type": "string"
+        },
+        "inventoryType": {
+            "description": "Describes the type of inventory this product is", 
+            "type": "string"
+        },
+        "memberNumber": {
+            "description": "Native identifier for a member of an organisation", 
+            "type": "string"
+        },
+        "orderlineId": {
+            "description": "Identifier of the orderline this ticket was purchased within", 
+            "type": "string"
+        },
+        "organisationCustomerId": {
+            "description": "A unique system identifier if the customer is part of an organisation", 
+            "type": "string"
+        },
+        "organisationId": {
+            "description": "Unique system identifier for an organisation if the customer is associated with that organisation", 
+            "type": "string"
+        },
+        "organisationName": {
+            "description": "Name for an organisation if the customer is associated with that organisation", 
+            "type": "string"
+        },
+        "sellerCode": {
+            "description": "Unique system identifier of a seller", 
+            "type": "string"
+        },
+        "salePostcode": {
+            "description": "Postcode provided by customer at point of sale", 
+            "type": "string"
+        }
+    },
+    "required": ["customerID", "transactionDateTime", "channelId", "channelCode", "productID", "orderId", "priceCategoryCode", "priceCategoryName", "priceTypeCode", "priceTypeName", "priceNet", "quantity", "section", "row", "seat", "barcode"], 
+    "additionalProperties": false
+}
