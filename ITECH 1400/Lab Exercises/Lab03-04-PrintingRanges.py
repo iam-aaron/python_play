@@ -21,7 +21,7 @@ print("\nPART 3 - 50 to 90 with a step size of 5 (make sure the final 90 value i
 print(list_3)
 
 list_4 = [] #30 to 0 inclusive with a step-size of -6 (minus six)
-for i in range(30,0,-6):
+for i in range(30,-1,-6):
     list_4.append(i)
 
 print("\nPART 4 - 30 to 0 inclusive with a step-size of -6 (minus six)")
