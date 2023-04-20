@@ -13,9 +13,22 @@ while(want_more):
     pizza_cost = pizza_cost_list[order_size]
     total_cost += pizza_cost_list[order_size]
 
-    print("\nFirst Three (3) Toppings are FREE, any toppings beyond that will cost a dollar per topping.")
-    topping_count = int(input("How many toppings would you like to get 1-6)? "))
-    topping_cost = 0 if topping_count <= 3 else topping_count - 3
+    print("\nFirst Two (2) Toppings are FREE, any toppings beyond that will cost a dollar per topping.")
+    topping_count = input("How many toppings would you like to get 1-5)? ")
+
+    
+    topping_count_invalid = True
+    while True:
+        if(not topping_count.isdigit() or int(topping_count) > 5 or int(topping_count) < 1):
+            print("Invalid input, please try again.")
+            topping_count = input("How many toppings would you like to get 1-5)? ")
+        else:
+            topping_count = int(topping_count)
+            break
+
+    
+
+    topping_cost = 0 if topping_count <= 2 else topping_count - 2
     total_cost += topping_cost
 
     customer_orders["ORDER "+str(order_counter)] = {str(pizza_size_list[order_size])+" pizza":pizza_cost, str(topping_count)+" toppings": topping_cost}

@@ -1,0 +1,80 @@
+{
+    "field":{
+        "type": "text", 
+        "title": "Date of Birth", 
+        "visible": "1", 
+        "ordernum": "1", 
+        "isrequired": "0", 
+        "show_in_list": "0", 
+        "defval": "", "options": []
+    }
+
+}
+
+
+
+{
+    "field0": {
+        "title": "Value", "type": "text", "visible": "1", "ordernum": "0", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field1": {
+        "title": "Date of Birth", "type": "text", "visible": "1", "ordernum": "1", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field2": {
+        "title": "isMortgaged", "type": "dropdown", "visible": "1", "ordernum": "1", "isrequired": "0", "show_in_list": "0", "defval": "", "options": [     "1",     "2"
+        ]
+    },
+    "field3": {
+        "title": "Contact Type", "type": "text", "visible": "1", "ordernum": "2", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field4": {
+        "title": "Mortgage details", "type": "text", "visible": "1", "ordernum": "2", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field5": {
+        "title": "Address", "type": "text", "visible": "1", "ordernum": "3", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field6": {
+        "title": "Financial Institution", "type": "text", "visible": "1", "ordernum": "3", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field7": {
+        "title": "City", "type": "text", "visible": "1", "ordernum": "4", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field8": {
+        "title": "Balance", "type": "text", "visible": "1", "ordernum": "4", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field9": {
+        "title": "State", "type": "text", "visible": "1", "ordernum": "5", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field10": {
+        "title": "Repayment amount", "type": "text", "visible": "1", "ordernum": "5", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field11": {
+        "title": "Postcode", "type": "text", "visible": "1", "ordernum": "6", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field12": {
+        "title": "Repayment Frequency", "type": "text", "visible": "1", "ordernum": "6", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field13": {
+        "title": "Most Recent Conversation", "type": "text", "visible": "1", "ordernum": "7", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field14": {
+        "title": "Is joint loan", "type": "dropdown", "visible": "1", "ordernum": "7", "isrequired": "0", "show_in_list": "0", "defval": "", "options": [     "3",     "4"
+        ]
+    },
+    "field15": {
+        "title": "Current Address", "type": "text", "visible": "1", "ordernum": "8", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field16": {
+        "title": "Is investment property", "type": "dropdown", "visible": "1", "ordernum": "8", "isrequired": "0", "show_in_list": "0", "defval": "", "options": [     "5",     "6"
+        ]
+    },
+    "field17": {
+        "title": "Notes", "type": "text", "visible": "1", "ordernum": "9", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field18": {
+        "title": "Living expenses monthly", "type": "text", "visible": "1", "ordernum": "9", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    },
+    "field19": {
+        "title": " Work Phone", "type": "text", "visible": "1", "ordernum": "10", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    }
+}

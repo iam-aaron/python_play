@@ -64,6 +64,8 @@ def main():
 
     input_num = int(input("\tEnter a postive integer: "))
 
+    print(collatzSequence(input_num))
+
     start_time = time.time()
     maxLength_seq = maxLengths(input_num)
     maxValue_seq = maxValue(input_num)

@@ -1,0 +1,45 @@
+{
+    "field": {
+        "type": "text",
+        "title": "New Field",
+        "alias": "new_field",
+        "tag": "tag1,tag2",
+        "visibility": "public",
+        "options": {
+            "first_option": "Option 1",
+            "second_option": "Option 2",
+            "third_option": "Option 3"
+        }
+    }
+}
+
+
+{
+    "field1": { 
+        "title": "Value", 
+        "type": "text", 
+        "visible": "1", 
+        "ordernum": "0", 
+        "isrequired": "0", 
+        "show_in_list": "0", 
+        "defval": "", 
+        "options": []
+    },
+    "field2": {"title": "Date of Birth", "type": "text", "visible": "1", "ordernum": "1", "isrequired": "0", "show_in_list": "0", "defval": "", "options": []
+    }
+}
+
+
+
+
+
+{
+    "type": "text", 
+    "title": "Date of Birth", 
+    "alias": "Date of Birth", 
+    "visible": "1", 
+    "ordernum": "1", 
+    "isrequired": "0", 
+    "show_in_list": "0", 
+    "defval": "", "options": []
+}]
